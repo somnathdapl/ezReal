@@ -43,5 +43,5 @@ target 'ezReal' do
   pod 'Crashlytics', '~> 3.10.7'
   pod 'Firebase/Database', '~> 5.9.0'
   pod 'Firebase/Storage', '~> 5.9.0'
-
+  pod 'GoogleAppMeasurement', '~> 5.2.0'
 end

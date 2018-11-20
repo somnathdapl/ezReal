@@ -18,9 +18,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   // all the configs at the top
-  [FIRApp configure];
-  [FIRDatabase database].persistenceEnabled = YES;
-  [RNFirebaseNotifications configure];
+  //[FIRApp configure];
+  //[FIRDatabase database].persistenceEnabled = YES;
+  //[RNFirebaseNotifications configure];
 
   // JS server bundle location
   NSURL *jsCodeLocation;
@@ -43,17 +43,17 @@
 }
 
 // For Firebase Notification
-- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
-  [[RNFirebaseNotifications instance] didReceiveLocalNotification:notification];
-}
+// - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+//   [[RNFirebaseNotifications instance] didReceiveLocalNotification:notification];
+// }
 
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(nonnull NSDictionary *)userInfo
-                                                       fetchCompletionHandler:(nonnull void (^)(UIBackgroundFetchResult))completionHandler{
-  [[RNFirebaseNotifications instance] didReceiveRemoteNotification:userInfo fetchCompletionHandler:completionHandler];
-}
+// - (void)application:(UIApplication *)application didReceiveRemoteNotification:(nonnull NSDictionary *)userInfo
+//                                                        fetchCompletionHandler:(nonnull void (^)(UIBackgroundFetchResult))completionHandler{
+//   [[RNFirebaseNotifications instance] didReceiveRemoteNotification:userInfo fetchCompletionHandler:completionHandler];
+// }
 
-- (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings {
-  [[RNFirebaseMessaging instance] didRegisterUserNotificationSettings:notificationSettings];
-}
+// - (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings {
+//   [[RNFirebaseMessaging instance] didRegisterUserNotificationSettings:notificationSettings];
+// }
 
 @end
