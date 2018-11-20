@@ -1,4 +1,4 @@
-package com.rnats;
+package com.ezreal;
 
 import android.app.Application;
 
