@@ -12,11 +12,13 @@
 #import <Firebase.h>
 #import "RNFirebaseNotifications.h"
 #import "RNFirebaseMessaging.h"
+#import <GoogleMaps/GoogleMaps.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  [GMSServices provideAPIKey:@"AIzaSyBWyQKJQwSArlCZbXcfGCfPKUSJHm5gYWU"];
   // all the configs at the top
   //[FIRApp configure];
   //[FIRDatabase database].persistenceEnabled = YES;

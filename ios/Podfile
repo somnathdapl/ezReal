@@ -44,4 +44,8 @@ target 'ezReal' do
   pod 'Firebase/Database', '~> 5.9.0'
   pod 'Firebase/Storage', '~> 5.9.0'
   pod 'GoogleAppMeasurement', '~> 5.2.0'
+  
+  # Required by Vector icons
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
 end
